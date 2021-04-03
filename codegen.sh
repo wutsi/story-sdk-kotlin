@@ -1,8 +1,8 @@
-java -jar ../wutsi-codegen/target/wutsi-codegen-0.0.23.jar sdk \
+java -jar ../wutsi-codegen/target/wutsi-codegen-0.0.24.jar sdk \
     -in https://wutsi-openapi.s3.amazonaws.com/story_api.yaml \
     -out . \
     -name story \
-    -package com.wutsi.site \
+    -package com.wutsi.story \
     -jdk 11 \
     -github_user wutsi \
     -github_project story-sdk-kotlin
