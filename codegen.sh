@@ -1,4 +1,4 @@
-java -jar ../wutsi-codegen/target/wutsi-codegen-0.0.24.jar sdk \
+java -jar ../wutsi-codegen/target/wutsi-codegen-0.0.25.jar sdk \
     -in https://wutsi-openapi.s3.amazonaws.com/story_api.yaml \
     -out . \
     -name story \
