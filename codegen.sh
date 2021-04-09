@@ -1,6 +1,6 @@
 #/bin/sh
 
-CODEGEN_VERSION="0.0.25"
+CODEGEN_VERSION="0.0.26"
 CODEGEN_JAR=~/wutsi-codegen/wutsi-codegen-${CODEGEN_VERSION}.jar
 
 API_NAME=story
