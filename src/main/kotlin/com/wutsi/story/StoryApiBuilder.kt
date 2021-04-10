@@ -13,7 +13,8 @@ public class StoryApiBuilder {
     .client(feign.okhttp.OkHttpClient())
     .encoder(feign.jackson.JacksonEncoder(mapper))
     .decoder(feign.jackson.JacksonDecoder(mapper))
-    .logger(feign.slf4j.Slf4jLogger())
+    .logger(feign.slf4j.Slf4jLogger(StoryApi::class.java))
+    .logLevel(feign.Logger.Level.BASIC)
     .requestInterceptors(interceptors)
     .target(StoryApi::class.java, env.url)
 }

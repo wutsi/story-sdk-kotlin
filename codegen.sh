@@ -12,7 +12,7 @@ echo "Generating code from ${API_URL}"
 java -jar ${CODEGEN_JAR} sdk \
     -in ${API_URL} \
     -out . \
-    -name story \
+    -name ${API_NAME} \
     -package com.wutsi.${API_NAME} \
     -jdk 11 \
     -github_user ${GITHUB_USER} \
