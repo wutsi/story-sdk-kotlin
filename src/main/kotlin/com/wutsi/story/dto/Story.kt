@@ -1,6 +1,7 @@
 package com.wutsi.story.dto
 
 import java.time.OffsetDateTime
+import java.util.Date
 import kotlin.Int
 import kotlin.Long
 import kotlin.String
@@ -16,5 +17,5 @@ public data class Story(
   public val socialMediaMessage: String? = null,
   public val content: String = "",
   public val readingMinutes: Int = 0,
-  public val publishedDateTime: OffsetDateTime = OffsetDateTime.now()
+  public val publishedDateTime: Date = Date()
 )
