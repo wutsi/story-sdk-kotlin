@@ -11,7 +11,7 @@ public interface StoryApi {
   @RequestLine("GET /v1/story/{id}")
   public fun `get`(@Param("id") id: Long): GetStoryResponse
 
-  @RequestLine("GET /v1/stories/published")
+  @RequestLine("GET /v1/stories/published?limit={limit}&offset={offset}")
   public fun published(@Param("limit") limit: Int, @Param("offset") offset: Int):
       SearchStoryResponse
 }
