@@ -1,8 +1,5 @@
 package com.wutsi.story.dto
 
-import com.fasterxml.jackson.annotation.JsonFormat
-import com.fasterxml.jackson.annotation.JsonFormat.Shape.NUMBER
-import java.time.OffsetDateTime
 import kotlin.Int
 import kotlin.Long
 import kotlin.String
@@ -19,7 +16,5 @@ public data class Story(
   public val wppStatus: String? = null,
   public val content: String = "",
   public val readingMinutes: Int = 0,
-
-  @JsonFormat(shape = NUMBER)
-  public val publishedDateTime: OffsetDateTime = OffsetDateTime.now()
+  public val publishedDateTime: Long = 0
 )
