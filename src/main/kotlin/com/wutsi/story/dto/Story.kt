@@ -16,5 +16,6 @@ public data class Story(
   public val wppStatus: String? = null,
   public val content: String = "",
   public val readingMinutes: Int = 0,
-  public val publishedDateTime: Long = 0
+  public val publishedDateTime: Long = 0,
+  public val access: String = ""
 )
