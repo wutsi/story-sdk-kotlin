@@ -10,6 +10,7 @@ public data class Story(
   public val siteId: Long = 1,
   public val userId: Long = 0,
   public val title: String = "",
+  public val language: String = "",
   public val tagLine: String = "",
   public val summary: String = "",
   public val slug: String = "",
@@ -20,5 +21,5 @@ public data class Story(
   public val publishedDateTime: Long = 0,
   public val access: String = "",
   public val tags: List<Tag> = emptyList(),
-  public val type: Topic = Topic()
+  public val topic: Topic = Topic()
 )

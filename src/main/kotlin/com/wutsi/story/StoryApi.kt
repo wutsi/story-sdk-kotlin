@@ -27,5 +27,5 @@ public interface StoryApi {
 
   @RequestLine("GET /v1/topics")
   @Headers("Content-Type: application/json")
-  public fun topic(): SearchTopicResponse
+  public fun topics(): SearchTopicResponse
 }

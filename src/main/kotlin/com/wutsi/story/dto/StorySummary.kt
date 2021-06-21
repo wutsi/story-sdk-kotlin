@@ -9,6 +9,7 @@ public data class StorySummary(
   public val siteId: Long = 1,
   public val userId: Long = 0,
   public val title: String = "",
+  public val language: String = "",
   public val tagLine: String = "",
   public val summary: String = "",
   public val slug: String = "",
