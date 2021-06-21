@@ -14,9 +14,10 @@ public interface StoryApi {
   @Headers("Content-Type: application/json")
   public fun `get`(@Param("id") id: Long): GetStoryResponse
 
-  @RequestLine("GET /v1/stories/published?start-date={start-date}&end-date={end-date}&limit={limit}&offset={offset}")
+  @RequestLine("GET /v1/stories/published?site-id={site-id}&start-date={start-date}&end-date={end-date}&limit={limit}&offset={offset}")
   @Headers("Content-Type: application/json")
   public fun published(
+    @Param("site-id") siteId: Long = 1,
     @Param("start-date") startDate: LocalDate? = null,
     @Param("end-date") endDate: LocalDate? = null,
     @Param("limit") limit: Int,
