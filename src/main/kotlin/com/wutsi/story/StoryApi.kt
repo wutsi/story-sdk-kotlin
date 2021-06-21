@@ -2,6 +2,7 @@ package com.wutsi.story
 
 import com.wutsi.story.dto.GetStoryResponse
 import com.wutsi.story.dto.SearchStoryResponse
+import com.wutsi.story.dto.SearchTopicResponse
 import feign.Headers
 import feign.Param
 import feign.RequestLine
@@ -23,4 +24,8 @@ public interface StoryApi {
     @Param("limit") limit: Int,
     @Param("offset") offset: Int
   ): SearchStoryResponse
+
+  @RequestLine("GET /v1/topics")
+  @Headers("Content-Type: application/json")
+  public fun topic(): SearchTopicResponse
 }

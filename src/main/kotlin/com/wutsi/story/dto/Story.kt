@@ -3,6 +3,7 @@ package com.wutsi.story.dto
 import kotlin.Int
 import kotlin.Long
 import kotlin.String
+import kotlin.collections.List
 
 public data class Story(
   public val id: Long = 0,
@@ -17,5 +18,7 @@ public data class Story(
   public val content: String = "",
   public val readingMinutes: Int = 0,
   public val publishedDateTime: Long = 0,
-  public val access: String = ""
+  public val access: String = "",
+  public val tags: List<Tag> = emptyList(),
+  public val type: Topic = Topic()
 )
